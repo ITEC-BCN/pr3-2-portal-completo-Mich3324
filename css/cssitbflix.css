@@ -94,3 +94,30 @@ color: aquamarine;
     border-radius: 5px;
     font-weight: bold;
 }
+
+/*
+CSS 
+*/
+.actores {
+    background-color: black;
+    color: white;
+}
+
+.actores>h2 {
+    justify-self: center;
+}
+
+.actores>div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0px;
+}
+
+.actores>div>div {
+    justify-items: center;
+    
+}
+
+.actores>div>div>img {
+    border-radius: 50%;
+}
