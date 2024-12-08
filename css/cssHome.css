@@ -1,43 +1,12 @@
 body{
     border: 0px;
     margin: 0px;
-}
-
-
-.contenedor{
-    display: block;
-    position:fixed;
-    box-sizing: content-box;
-    width: 100%;
-    border: 10px;
-    padding: 5px;
-    background-color: brown;
-    
-   
-
-}
-.titulo{
-    color: black;
-    font-style: italic;
-    text-align: center;
-
-}
-.links{
-    display: flex;
-    padding: 10px; 
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content:space-around;
-}
-   
-.links a {
-    color: black ;
-
+    background-color: darkgoldenrod;
 }
 
 .contenedorSectionPeliculas{
     padding: 20px;
-    background-color: white;
+    background-color:black;
     text-transform: uppercase;
     text-align: left;
     font-size: 1.8em;
@@ -47,15 +16,17 @@ body{
 }
 
 .tituloPeliculas{
-    color: rgb(25, 26, 26);
+    text-align: center;
+    color: darkgoldenrod;
 }
 
 .peliculas{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr; 
-padding: 10px; 
+padding: 50
+px; 
 gap: 10px;
-background-color: rgb(243, 234, 234); 
+background-color: black; 
 }
 .peliculas article{
     background-color: darkgoldenrod;
@@ -95,12 +66,24 @@ color: aquamarine;
     font-weight: bold;
 }
 
-/*
-CSS 
-*/
+.peliculas article .ver-mas{
+    display: block;
+    font-size: 0.8em;
+    margin-top: 10px;
+    padding: 5px;
+    
+    color: rgb(46, 59, 55);
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
 .actores {
-    background-color: black;
-    color: white;
+    border: 0px;
+    background-color:black;
+    color: darkgoldenrod;
+    border-bottom: 2px solid #e41d1a;
+
 }
 
 .actores>h2 {
@@ -128,8 +111,12 @@ CSS
 }
 
 .festivales {
-    background-color: pink;
+
+    background-color:black;
+    color: darkgoldenrod;
     padding: 0px 30px;
+    border-bottom: 2px solid #e41d1a;
+    border-right: 2px solid #e41d1a ;
 }
 
 .festivales>h2 {
@@ -141,12 +128,63 @@ CSS
     grid-template-rows: 1fr 1fr;
 }
 
+.series{
+    border-bottom: 2px solid #e41d1a;
+    color:darkgoldenrod;
+    background-color: black;
+}
+
 .series>div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: black;
+    
 }
 
 .series>h2 {
     justify-self: center;
+}
+
+.lo-mas-visto {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.lo-mas-visto h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px; 
+    justify-content: center;
+}
+
+.grid span {
+    position: relative; 
+}
+
+.grid img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px; 
+}
+
+.grid p {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    margin: 0;
+    font-size: 24px; 
+    font-weight: bold;
+    color: darkgoldenrod; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px 10px; 
+    border-radius: 5px; 
 }
